@@ -29,9 +29,9 @@ def check_domain_shift(train_data, test_data
                        , encode_category=True
                       ):
     '''
-    fit a train/test classifier to detect possible domain shift
+    fit a train/test random-forest classifier to detect possible domain shift
     
-    return a df of feature importance
+    return a df of feature importance for classifier
     '''
     from sklearn.preprocessing import LabelEncoder
     from sklearn.ensemble import RandomForestClassifier
